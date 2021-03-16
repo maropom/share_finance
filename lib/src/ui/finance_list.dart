@@ -18,8 +18,6 @@ class FinanceList extends StatelessWidget {
       body: StreamBuilder(
         stream: _bloc.allFinance,
         builder: (_, snapshot) {
-          print("snap!");
-          print(snapshot);
           if (snapshot.hasData) {
             return _buildList(snapshot);
           } else if (snapshot.hasError) {
