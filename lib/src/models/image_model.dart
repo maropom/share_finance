@@ -8,6 +8,5 @@ class ImageModel {
   }
 
   String get imageUrl => _imageUrl;
-
   int get id => _id;
 }
