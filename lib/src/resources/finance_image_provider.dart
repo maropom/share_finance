@@ -8,8 +8,6 @@ class FinanceImageProvider {
   Future<List<ImageModel>> fetchImageList() async {
     final response = await client.get(
         "https://api.punkapi.com/v2/beers");
-
-    print(response.body);
     if (response.statusCode == 200) {
       // 成功
       List<dynamic> jsonArray = JsonDecoder().convert(response.body);
